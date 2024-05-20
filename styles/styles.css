@@ -8,6 +8,16 @@
     --color-primary: rgba(111, 239, 75, 0.892);
     --secondary-color: orange;
 }
+.icono-fijo {
+    width: 70px;
+    height: 50px; 
+    background-image: url('../assets/whatsapp-logo-24.png'); 
+    background-size: cover; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    z-index: 999; 
+  }
 
 header {
     background-color: var(--color-primary);
@@ -167,6 +177,49 @@ background-color: rgb(42, 184, 220);
   
   @media (max-width: 480px) {
     #education .container-grid-education,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  .skewed {
+    background: rgb(198, 216, 38);
+    position: relative;
+    padding: 20px 5px 50px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  
+  .skewed:before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewY(3deg);
+    transform-origin: top right;
+  }
+  
+  footer {
+    padding: 30px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 880px) {
+    #beer .container-grid-beer,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #beer .container-grid-beer,
     #projects .container-grid-projects {
       grid-template-columns: 1fr;
     }
