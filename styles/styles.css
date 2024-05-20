@@ -1,13 +1,173 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+    --color-primary: rgba(111, 239, 75, 0.892);
+    --secondary-color: orange;
 }
 
 header {
- background-color: yellowgreen;
- padding: 20px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- 
+    background-color: var(--color-primary);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../assets/fondo.png");
+    background-size: cover;
+    color: white;
+}
+
+#banner h1 {
+    font-size: 40px;
+}
+
+#banner p {
+    width: 70%;
+    font-size: 25px;
+    color: white;
+}
+
+#projects,
+#products {
+    text-align: center;
+    }
+
+#projects h2 {
+    font-size: 30px;
+}
+
+#projects .container-grid-projects,
+#products .container-grid-products {
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+#projects .card:hover, 
+#products .card:hover {
+    transform: scale(1.03);
+    padding: 20px;
+    border: 3px solid rgba(239, 127, 75, 0.892);
+    box-shadow: 6px 5px 45px -15px rgba(111, 239, 75, 0.892);
+    border-radius: 30px;
+    transition: 0.3s transform;
+}
+
+#projects .card a {
+    text-decoration: none;
+    border: 2px solid blueviolet;
+    padding: 5px 10px;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    background-color: rgba(33, 69, 213, 0.808);
+    color: black;
+}
+
+#products .card a {
+    text-decoration: none;
+    border: 2px solid blueviolet;
+    padding: 5px 10px;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    background-color: rgba(33, 69, 213, 0.808);
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-primary);
+    color: white;
+}
+#products {
+background-color: rgb(42, 184, 220);
+}
+
+.container-img-project img {
+    max-width: 80%; 
+    height: auto;
+}
+
+/* Contacto */
+#contact h2 {
+    text-align: center;
+  }
+  
+  form {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+  }
+  
+  form * {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+  }
+  
+  form input,
+  textarea {
+    border: 1px solid rgb(212, 82, 208);
+    padding: 7px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: black;
+    color: rgb(240, 47, 47);
+    text-align: center;
+  }
+  
+  @media (max-width: 880px) {
+    #education .container-grid-education,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #education .container-grid-education,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="assets/icono.png"/>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <nav>
      <ul>
         <li><a href="/#banner">Acerca de mí</a></li>
-        <li><a href="/#proyects">Proyectos en los que participé</a></li>
+        <li><a href="/#projects">Proyectos en los que participé</a></li>
         <li><a href="/#products">Productos</a></li>
         <li><a href="/#contact">Contacto</a></li>
         
@@ -22,9 +22,9 @@
 
     </header>
     <main>
-        <section id="banner"></section>
+        <section id="banner">
         <h1>Constanza Torrilla</h1>
-        <h2>Técnica en Sistemas de Información Geográfica</h2>
+        <h2>Aplicaciones tecnológicas con Información Geográfica</h2>
 
         <p>¡Hola! Puedo ayudarte a gestionar, analizar y visualizar datos espaciales para apoyar diversos 
             proyectos e iniciativas vinculadas a la información geoespacial.Me especializo en IDE
@@ -35,9 +35,10 @@
             de recursos geográficos. Con un enfoque meticuloso y orientado a resultados, estoy comprometida 
             en utilizar mis habilidades técnicas y mi creatividad para abordar desafíos complejos y contribuir
             al avance y desarrollo de la tecnología geoespacial.</p>
-        <section id="proyects"></section>
+        </section>
+        <section id="projects">
         <h2>Proyectos en los que participé</h2>
-        <div class="contaneir-grid proyect">
+        <div class="container-grid-projects">
             <div class="card"> 
                 <h3>Territorios en Acción</h3>
                 <p>Relevamiento cartográfico e interacción con organizaciones sociales.
@@ -66,9 +67,12 @@
                 </p>
                 <a href="https://argentina.techo.org/"target="_blank">Visitar página</a>
             </div>
+        </section>
         </div>
-        <section id="products"></section>
-         <<div class="card">
+        <section id="products">
+        <h2>Productos</h2>
+        <div class="container-grid-products">
+         <div class="card">
             <div class="container-img-project">
               <img src="assets/Multi-layer-map.png.png" alt="ANÁLISIS ESPACIAL"/>
             </div>
@@ -83,9 +87,12 @@
             </p>
             <h4>¿cuánto tarda y qué valor tiene mi proyecto?</h4>
             <button>consultar presupuesto</button>
+          </div>
+
+            <div class="card">
             <div class="container-img-project">
                 <img src="assets/BD.png" alt="x" />
-              </div>
+            </div>
               <h3>Bases de datos, servidores y APIs</h3>
               <p>
                Gestion capas de datos poniendo en marcha 
@@ -99,10 +106,12 @@
               </p>
               <h4>¿cuánto tarda y qué valor tiene mi proyecto?</h4>
               <button>consultar presupuesto</button>
+            </div>
+              <div class="card">
               <div class="container-img-project">
-                
-                <img src="assets/drone.png" alt=""/>
+                 <img src="assets/drone.png" alt=""/>
               </div>
+
               <h3>Captura de datos</h3>
               <p>
                 Tecnología para dotar de componente espacial a los datos 
@@ -117,12 +126,12 @@
                 Actualizaciones cartográficas.           
               </p>
               <h4>¿cuánto tarda y qué valor tiene mi proyecto?</h4>
-
               <button>consultar presupuesto</button>
-
+            </div>
+              <div class="card">
+                <div class="container-img-project">
               <img src="assets/capacit.png" alt=""/>
-
-        </div>
+              </div>
             <h3>Capacitaciones SIG </h3>
             <p>
             Aprende paso a paso. Actualiza tus conocimientos en SIG 
@@ -132,26 +141,36 @@
             </p>
             <h4>grupales e individuales</h4>
             <button>consultar presupuesto</button>
-            <img src="xxx" alt=""/>
-
-        </div>
-
-        <h3><img src="assets/SIG.png" alt=""/>
-
-    
-        <h3> Consultoría y Desarrollo en Sistemas de Información Geográfica </h3>
-        <p>
-         Te ofrecemos nuestros servicios de consultoría y desarrollo GIS 
-         tanto a empresas privadas y particulares como a la Administración 
-         Pública a escala nacional e internacional.          
-        </p>
-        <h4>¿Qué precio tiene el proyecto que tenes en mente?</h4>
-        <button>consultar presupuesto</button>
-
-
-        <section id="contact"></section>
-    
-      <h2>Contacto</h2>
+          </div>
+        
+        
+           <div class="card">
+             <div class="container-img-project">
+               <img src="assets/Impacto-ambiental.png" alt="Impacto-ambiental"/>
+             </div>
+             <h3>Estudios de Evaluación de Impacto Ambiental (EsIA)</h3>
+             <p>
+              Evaluamos tu proyecto ambientalmente para encontrar el mejor encaje en el territorio            
+             </p>
+             <h4>¿cuánto tarda y qué valor tiene mi proyecto?</h4>
+             <button>consultar presupuesto</button>
+           </div>
+              <div class="card">
+               <div class="container-img-project">
+                 <img src="assets/planifi terr.png" alt="Planificación territorial"/>
+               </div>
+               <h3>Planificación urbanística y Organización del Territorio</h3>
+               <p>
+                Asistencia técnica ambiental, estudios de incidencia ambiental,
+                estudios ambientales estratégicos, estudios de capacidad agronómica.           
+               </p>
+               <h4>¿cuánto tarda y qué valor tiene mi proyecto?</h4>
+               <button>consultar presupuesto</button>
+             </div>
+            </div>
+      </section>
+      <section id="contact">
+       <h2>Contacto</h2>
       <form
         action="https://formsubmit.co/torrillacoti@gmail.com"
         method="POST"
